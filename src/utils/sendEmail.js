@@ -6,7 +6,7 @@ const api = process.env.MODE === "DEV" ? `:${process.env.PORT}` : ""; // Fixes c
 const transporter = nodemailer.createTransport({
   service: "gmail", // Gmail SMTP configuration
   auth: {
-    user:  "zeiadkhaled2825@gmail.com",
+    user:  "askofeld11511@gmail.com",
     pass: "qknj wuqc rszu vdbw"
   },
   tls: {
@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
 export const sendEmail = async ({ to, subject, temp, attachments }) => {
   try {
     const info = await transporter.sendMail({
-      from:'"kiddo app " <zeiadkhaled2825@gmail.com>"' , // Corrected template literal usage
+      from:'"kiddo app " <askofeld11511@gmail.com>"' , // Corrected template literal usage
       to,
       subject,
       html: temp,
