@@ -16,7 +16,6 @@ export const createUser = async (req, res) => {
       email,
       password,
       confirmPassword,
-      chapter
   } = req.body;
   
 
