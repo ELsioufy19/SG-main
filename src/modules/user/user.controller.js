@@ -33,13 +33,6 @@ export const createUser = async (req, res) => {
       userName,
       email,
       password: hashedPassword,
-      chapter: [{
-          id: chapter.id || null,
-          progress: chapter.progress || 0,
-          quizProgress: chapter.quizProgress || 0,
-          videosProgress: chapter.videosProgress || 0
-
-      }]
   });
 
   return res.status(201).json({
